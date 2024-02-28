@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Category</title>
+    <!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/images/favicon.html" />
+<!-- bootstrap 5.1 -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+<!-- Style css -->
+<link rel="stylesheet" href="assets/css/style.css" />
+<!-- Responsive css -->
+<link rel="stylesheet" href="assets/css/responsive.css" />
+<!-- nice select -->
+<link rel="stylesheet" href="assets/css/nice-select.css" />
+<!-- Slick Carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+<!-- popup zoom image -->
+<link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <!-- login -->
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl login-sec">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-4 col-md-4 col-sm-8 col-xs-12 d-none d-xl-block">
+                        <div class="login-img">
+                            <img src="assets/images/logn-img.png" />
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="login">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>Sign In</span>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <hr>
+                            <form class="needs-validation" novalidate>
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                                            <input type="email" class="form-control address-input" placeholder="Email"
+                                                required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Password</label>
+                                            <input type="password" class="form-control address-input"
+                                                placeholder="******" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-6">
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" required="" id="remember">
+                                                <label class="form-check-label" for="remember">
+                                                    Remember me
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-6">
+                                    <p class="text-end"><a href="#" data-bs-target="#exampleModalToggle3"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal">Forgot password?</a></p>
+                                    </div>
+
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <button type="submit" class="btn btn-theme-blue mt-1 w-100">Sign In</button>
+                                    </div>
+                                </div>
+                                <hr class="mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <button type="submit" class="btn btn-facebook mb-2 w-100"><img
+                                                src="assets/images/facebook-icon.png" /> Sign-up with
+                                            Facebook</button>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <button type="submit" class="btn btn-google mb-2 w-100"><img
+                                                src="assets/images/gmail-icon.png" /> Sign-up with google</button>
+                                    </div>
+                                </div>
+                                <hr class="mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <p>Don’t have an account? <a href="#" data-bs-target="#exampleModalToggle2"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal">Sign up</a>
+                                        <p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end -->
+
+<!-- register -->
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl register-sec">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row align-items-center">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8 col-xs-12 d-none d-xl-block">
+                        <div class="register-img">
+                            <img src="assets/images/register-img.png" />
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="register">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>Create account</span>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <hr>
+                            <form class="needs-validation" novalidate>
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">First Name</label>
+                                            <input type="text" class="form-control address-input"
+                                                placeholder="First Name" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Last name</label>
+                                            <input type="text" class="form-control address-input"
+                                                placeholder="Last Name" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                                            <input type="email" class="form-control address-input" placeholder="Email"
+                                                required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                                            <input type="number" class="form-control address-input phone-icon"
+                                                placeholder="Phone Number" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Password</label>
+                                            <input type="password" class="form-control address-input"
+                                                placeholder="******" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Confirm Password</label>
+                                            <input type="password" class="form-control address-input"
+                                                placeholder="******" required="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="mb-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" required="" id="agree">
+                                                <label class="form-check-label" for="agree">
+                                                    I agree to all the <a href="#"
+                                                        class="text-decoration-none text-black">Terms </a> and <a
+                                                        href="#" class="text-decoration-none text-black">Privacy
+                                                        Policy</a>.
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <button type="submit" class="btn btn-theme-blue mt-3 w-100">Create
+                                            Account</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <button type="submit" class="btn btn-facebook mb-2 w-100"><img
+                                                src="assets/images/facebook-icon.png" /> Sign-up with
+                                            Facebook</button>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <button type="submit" class="btn btn-google mb-2 w-100"><img
+                                                src="assets/images/gmail-icon.png" /> Sign-up with google</button>
+                                    </div>
+                                </div>
+                                <hr class="mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <p>Already have an account? <a href="#" data-bs-target="#exampleModalToggle"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal">Log In</a>
+                                        <p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end -->
+
+<!-- Forgot Password -->
+<div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl login-sec">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-4 col-md-4 col-sm-8 col-xs-12 d-none d-xl-block">
+                        <div class="forgot-img">
+                            <img src="assets/images/forgot-img.jpg" />
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="login">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>Forgot Password</span>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <hr>
+                            <form class="needs-validation" novalidate>
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="mb-2">
+                                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                                            <input type="email" class="form-control address-input" placeholder="Email"
+                                                required="">
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <button type="submit" class="btn btn-theme-blue mt-1 w-100">Forgot Password</button>
+                                    </div>
+                                </div>
+                                <hr class="mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p>Already have an account? <a href="#" data-bs-target="#exampleModalToggle"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal">Log In</a>
+                                        <p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end -->
+
+
+<!-- top bar -->
+<section class="top-bar">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-5 col-xs-12 col-7 top-order-1">
+                <div class="top-logo">
+                    <nav class="navbar-expand-lg">
+                        <button class="navbar-toggler ps-0 pb-0 pt-0" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <img src="assets/images/toggler-icon.png" alt="Toggle navigation"
+                                class="navbar-toggler-icon">
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/logo.png" />
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-6 col-sm-5 col-xs-12 col-12 top-order-3">
+                <form>
+                    <div class="input-group has-search">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input type="text" class="form-control top-search" placeholder="What is on your mind today?"
+                            aria-label="What is on your mind today?" aria-describedby="button-addon2">
+                        <button class="btn btn-search d-none d-lg-block" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-2 col-5 top-order-2">
+                <div class="top-icon">
+                    <ul class="d-flex list-unstyled justify-content-end align-items-center mb-0">
+                        <li class="right d-none d-md-block"><a href="#"><img src="assets/images/call.png" /></a></li>
+                        <li class="right d-none d-md-block"><a href="#"><img src="assets/images/heart.png" /></a></li>
+                        <li class="right"><a href="#"><img src="assets/images/shopping.png" /></a></li>
+                        <!-- login -->
+                        <li class="right">
+                            <a data-bs-toggle="modal" href="#exampleModalToggle" role="button" class="btn btn-link p-0">
+                                <img src="assets/images/user.png" />
+                            </a>
+                        </li>
+                        <!-- account -->
+                        <!-- <li class="right">
+                            <div class="dropdown">
+                                <button class="btn btn-link p-0" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/images/user.png" />
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">My Profile </a></li>
+                                    <li><a class="dropdown-item" href="#">My Address Book</a></li>
+                                    <li><a class="dropdown-item" href="#">My Wallet</a></li>
+                                    <li><a class="dropdown-item" href="#">My Favorite</a></li>
+                                    <li><a class="dropdown-item" href="#">Order History</a></li>
+                                    <li><a class="dropdown-item" href="#">Log out</a></li>
+                                </ul>
+                            </div>
+                        </li> -->
+
+                </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end -->    <header class="header d-none d-lg-block">
+    <nav class="navbar navbar-expand-lg stroke bg-transparent">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item dropdown megamenu-li">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">All
+                            CATEGORY <i class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-menu megamenu">
+                            <div class="container">
+                                <div class="row">
+                                    <p>All Category</p>
+                                    <hr>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <a class="dropdown-item" href="category.html">Cameras & Camcorders</a>
+                                        <a class="dropdown-item" href="category.html">Laptops & Computers</a>
+                                        <a class="dropdown-item" href="category.html">Mobile Phones</a>
+                                        <a class="dropdown-item" href="category.html">TVs and Entertainment</a>
+                                        <a class="dropdown-item" href="category.html">Kitchen Appliances</a>
+                                        <a class="dropdown-item" href="category.html">Home Appliances</a>
+                                        <a class="dropdown-item" href="category.html">Wearable Gadgets</a>
+                                        <a class="dropdown-item" href="category.html">Health Care</a>
+                                        <a class="dropdown-item" href="category.html">Roofing Sheets</a>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <a class="dropdown-item" href="category.html">PVC Pipes</a>
+                                        <a class="dropdown-item" href="category.html">Industrial Machinery</a>
+                                        <a class="dropdown-item" href="category.html">Gaming</a>
+                                        <a class="dropdown-item" href="category.html">Ladies Kurtis</a>
+                                        <a class="dropdown-item" href="category.html">Men's Clothing</a>
+                                        <a class="dropdown-item" href="category.html">Footwear</a>
+                                        <a class="dropdown-item" href="category.html">Brand Store</a>
+                                        <a class="dropdown-item" href="category.html">Building Construction</a>
+                                        <a class="dropdown-item" href="category.html">Medical Equipment</a>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <a class="dropdown-item" href="category.html">Kids Toys</a>
+                                        <a class="dropdown-item" href="category.html">Electronics</a>
+                                        <a class="dropdown-item" href="category.html">Babies wear</a>
+                                        <a class="dropdown-item" href="category.html">Chemicals</a>
+                                        <a class="dropdown-item" href="category.html">Mobile Phones</a>
+                                        <a class="dropdown-item" href="category.html">Garments</a>
+                                        <a class="dropdown-item" href="category.html">Cameras & Camcorders</a>
+                                        <a class="dropdown-item" href="category.html">Laptops & Computers</a>
+                                        <a class="dropdown-item" href="category.html">Mobile Phones</a>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <a class="dropdown-item" href="category.html">Cameras & Camcorders</a>
+                                        <a class="dropdown-item" href="category.html">Laptops & Computers</a>
+                                        <a class="dropdown-item" href="category.html">Mobile Phones</a>
+                                        <a class="dropdown-item" href="category.html">TVs and Entertainment</a>
+                                        <a class="dropdown-item" href="category.html">Kitchen Appliances</a>
+                                        <a class="dropdown-item" href="category.html">Home Appliances</a>
+                                        <a class="dropdown-item" href="category.html">Wearable Gadgets</a>
+                                        <a class="dropdown-item" href="category.html">Health Care</a>
+                                        <a class="dropdown-item" href="category.html">Roofing Sheets</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="category.html">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Home & Kitchen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Appliances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Sports & More</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Essentials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Global Shopping</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Global Shopping</a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    <header class="header header-bottom d-none d-lg-block">
+    <nav class="navbar navbar-expand-lg stroke bg-transparent">
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Jaw Dropping Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Refurbished Mobile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Express Shipping</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Men's Clothing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Women's Fashion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Footwear</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Kitchen & Dinning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Audio & Headphones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Bags & Luggage</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <section class="product-category">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-title text-center">
+                        <h1 class="mb-2 text-theme">Men's clothing</h1>
+                        <p class="text-black fw-500">65525 Products</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between mt-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="category-button">
+                        <button type="button" class="btn btn-category-button">50% - 70%</button>
+                        <button type="button" class="btn btn-category-button">70% and more</button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="sort text-end">
+                        <form class="d-flex align-items-center">
+                            <select>
+                                <option>Popularity</option>
+                                <option>Newest</option>
+                                <option>Low To High</option>
+                                <option>High To Low</option>
+                            </select>
+                            <a href="#"><img src="assets/images/order-list.png" /></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                    <div class="category-filter">
+                        <div class="f-top">
+                            <h2>Filters</h2>
+                            <span>Clear All</span>
+                        </div>
+                        <div class="f-bottom">
+                            <h3>Department</h3>
+                            <button type="button" class="btn btn-category-button">Men's Clothing</button>
+                        </div>
+                        <div class="filter-accordian mt-3">
+                            <div class="accordion" id="myAccordion">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="category-filter">
+                                        <button type="button" class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#category">Category</button>
+                                    </h3>
+                                    <div id="category" class="accordion-collapse collapse"
+                                        data-bs-parent="#myAccordion">
+                                        <div class="card-body px-0 py-2">
+                                            <div class="form-check-inline">
+
+                                                <label class="customradio"><span class="radiotextsty">Ethnic Wear</span>
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">Inner &
+                                                        Nightwear</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">Casual Wear</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">Formal Wear</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">Sports Wear</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">Swim &
+                                                        Beachwear</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="category-filter">
+                                        <button type="button" class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#discount">Discount</button>
+                                    </h3>
+                                    <div id="discount" class="accordion-collapse collapse"
+                                        data-bs-parent="#myAccordion">
+                                        <div class="card-body px-0 py-2">
+                                            <div class="form-check-inline">
+
+                                                <label class="customradio"><span class="radiotextsty">10%</span>
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">20%</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">30%</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">40%</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">50%</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">60%</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="category-filter">
+                                        <button type="button" class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#price">Price</button>
+                                    </h3>
+                                    <div id="price" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                        <div class="card-body px-0 py-2">
+                                            <div class="form-check-inline">
+
+                                                <label class="customradio"><span class="radiotextsty">10$</span>
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">20$</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">30$</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">40$</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">50$</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">60$</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="category-filter">
+                                        <button type="button" class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#size">Size</button>
+                                    </h3>
+                                    <div id="size" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                        <div class="card-body px-0 py-2">
+                                            <div class="form-check-inline">
+
+                                                <label class="customradio"><span class="radiotextsty">Large</span>
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">Medium</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">Small</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">Extra Small</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="category-filter">
+                                        <button type="button" class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#colour">Colour</button>
+                                    </h3>
+                                    <div id="colour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                        <div class="card-body px-0 py-2">
+                                            <div class="form-check-inline">
+
+                                                <label class="customradio"><span class="radiotextsty">Red</span>
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">Yellow</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">Blue</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">Green</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="category-filter">
+                                        <button type="button" class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#alldiscount">All
+                                            Discount</button>
+                                    </h3>
+                                    <div id="alldiscount" class="accordion-collapse collapse"
+                                        data-bs-parent="#myAccordion">
+                                        <div class="card-body px-0 py-2">
+                                            <div class="form-check-inline">
+
+                                                <label class="customradio"><span class="radiotextsty">10$</span>
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">20$</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">30$</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">40$</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">50$</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="customradio"><span class="radiotextsty">60$</span>
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 col-6">
+                            <div class="card">
+                                <img class="selling-img" src="assets/images/men-1.png">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/star-icon.png" class="me-2">
+                                    <span class="rating">(271)</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><a href="product.html" class="text-decoration-none">Levi's Chilly Green
+                                            Pure Cotton Slim Fit Checks Shirts.</a></p>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="product-price">£849.00</span>
+                                        <span class="save-price">Save £100.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#"><img src="assets/images/product-heart.png"></a>
+                                        <a href="#"><img src="assets/images/cart.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 col-6">
+                            <div class="card">
+                                <img class="selling-img" src="assets/images/men-2.png">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/star-icon.png" class="me-2">
+                                    <span class="rating">(271)</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><a href="product.html" class="text-decoration-none">Levi's Chilly Green
+                                            Pure Cotton Slim Fit Checks Shirts.</a></p>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="product-price">£849.00</span>
+                                        <span class="save-price">Save £100.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#"><img src="assets/images/product-heart.png"></a>
+                                        <a href="#"><img src="assets/images/cart.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 col-6">
+                            <div class="card">
+                                <img class="selling-img" src="assets/images/men-3.png">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/star-icon.png" class="me-2">
+                                    <span class="rating">(271)</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><a href="product.html" class="text-decoration-none">Levi's Chilly Green
+                                            Pure Cotton Slim Fit Checks Shirts.</a></p>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="product-price">£849.00</span>
+                                        <span class="save-price">Save £100.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#"><img src="assets/images/product-heart.png"></a>
+                                        <a href="#"><img src="assets/images/cart.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 col-6">
+                            <div class="card">
+                                <img class="selling-img" src="assets/images/men-4.png">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/star-icon.png" class="me-2">
+                                    <span class="rating">(271)</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><a href="product.html" class="text-decoration-none">Levi's Chilly Green
+                                            Pure Cotton Slim Fit Checks Shirts.</a></p>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="product-price">£849.00</span>
+                                        <span class="save-price">Save £100.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#"><img src="assets/images/product-heart.png"></a>
+                                        <a href="#"><img src="assets/images/cart.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 col-6">
+                            <div class="card">
+                                <img class="selling-img" src="assets/images/men-1.png">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/star-icon.png" class="me-2">
+                                    <span class="rating">(271)</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><a href="product.html" class="text-decoration-none">Levi's Chilly Green
+                                            Pure Cotton Slim Fit Checks Shirts.</a></p>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="product-price">£849.00</span>
+                                        <span class="save-price">Save £100.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#"><img src="assets/images/product-heart.png"></a>
+                                        <a href="#"><img src="assets/images/cart.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 col-6">
+                            <div class="card">
+                                <img class="selling-img" src="assets/images/men-2.png">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/star-icon.png" class="me-2">
+                                    <span class="rating">(271)</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><a href="product.html" class="text-decoration-none">Levi's Chilly Green
+                                            Pure Cotton Slim Fit Checks Shirts.</a></p>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="product-price">£849.00</span>
+                                        <span class="save-price">Save £100.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#"><img src="assets/images/product-heart.png"></a>
+                                        <a href="#"><img src="assets/images/cart.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 col-6">
+                            <div class="card">
+                                <img class="selling-img" src="assets/images/men-3.png">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/star-icon.png" class="me-2">
+                                    <span class="rating">(271)</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><a href="product.html" class="text-decoration-none">Levi's Chilly Green
+                                            Pure Cotton Slim Fit Checks Shirts.</a></p>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="product-price">£849.00</span>
+                                        <span class="save-price">Save £100.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#"><img src="assets/images/product-heart.png"></a>
+                                        <a href="#"><img src="assets/images/cart.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 col-6">
+                            <div class="card">
+                                <img class="selling-img" src="assets/images/men-4.png">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/star-icon.png" class="me-2">
+                                    <span class="rating">(271)</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><a href="product.html" class="text-decoration-none">Levi's Chilly Green
+                                            Pure Cotton Slim Fit Checks Shirts.</a></p>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="product-price">£849.00</span>
+                                        <span class="save-price">Save £100.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#"><img src="assets/images/product-heart.png"></a>
+                                        <a href="#"><img src="assets/images/cart.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 col-6">
+                            <div class="card">
+                                <img class="selling-img" src="assets/images/men-1.png">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/star-icon.png" class="me-2">
+                                    <span class="rating">(271)</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><a href="product.html" class="text-decoration-none">Levi's Chilly Green
+                                            Pure Cotton Slim Fit Checks Shirts.</a></p>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="product-price">£849.00</span>
+                                        <span class="save-price">Save £100.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#"><img src="assets/images/product-heart.png"></a>
+                                        <a href="#"><img src="assets/images/cart.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 col-6">
+                            <div class="card">
+                                <img class="selling-img" src="assets/images/men-2.png">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/star-icon.png" class="me-2">
+                                    <span class="rating">(271)</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><a href="product.html" class="text-decoration-none">Levi's Chilly Green
+                                            Pure Cotton Slim Fit Checks Shirts.</a></p>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="product-price">£849.00</span>
+                                        <span class="save-price">Save £100.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#"><img src="assets/images/product-heart.png"></a>
+                                        <a href="#"><img src="assets/images/cart.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 col-6">
+                            <div class="card">
+                                <img class="selling-img" src="assets/images/men-3.png">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/star-icon.png" class="me-2">
+                                    <span class="rating">(271)</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><a href="product.html" class="text-decoration-none">Levi's Chilly Green
+                                            Pure Cotton Slim Fit Checks Shirts.</a></p>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="product-price">£849.00</span>
+                                        <span class="save-price">Save £100.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#"><img src="assets/images/product-heart.png"></a>
+                                        <a href="#"><img src="assets/images/cart.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 col-6">
+                            <div class="card">
+                                <img class="selling-img" src="assets/images/men-4.png">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/star-icon.png" class="me-2">
+                                    <span class="rating">(271)</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><a href="product.html" class="text-decoration-none">Levi's Chilly Green
+                                            Pure Cotton Slim Fit Checks Shirts.</a></p>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="product-price">£849.00</span>
+                                        <span class="save-price">Save £100.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#"><img src="assets/images/product-heart.png"></a>
+                                        <a href="#"><img src="assets/images/cart.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="give-feedback">
+                                <div class="give-left">
+                                    <h4>We'd love to hear from you</h4>
+                                    <p>This will just take 2 minutes of your time</p>
+                                </div>
+                                <div class="give-link">
+                                    <a href="#">Give Feedback ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="viewed">
+                                <div class="viewed-left">
+                                    <p>You've viewed 40/6555 products</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="viewed-link">
+                                    <span>Show More Products</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- browse -->
+    <section class="browse">
+    <div class="container">
+        <div class="browse-bg">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="browse-right">
+                        <h3>Browse our collection of 50+ Online Store</h3>
+                        <a href="#" class="btn btn-browse-all">Browse All</a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="browse-left text-center animate-up">
+                        <img src="assets/images/man-shopping.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    <!-- end -->
+
+    <!-- footer -->
+    <footer class="footer bg-footer text-white text-xs-center">
+    <div class="container">
+        <div class="row mt-0 pt-4 pb-4 justify-content-between">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12  text-m-center">
+                <div class="footer-logo">
+                    <a href="#"><img src="assets/images/footer-logo.png" /></a>
+                    <p>Funding freemium long tail hypotheses first mover advantage assets ownership
+                    </p>
+                    <p><a href="mailto:agensi@mail.com"><i class="fa fa-envelope"></i> agensi@mail.com</a></p>
+                    <p><a href="tel:12 3456 7890"><i class="fa fa-phone"></i> + 12 3456 7890</a></p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12  text-m-center">
+                <div class="footer-links m-mt-40">
+                    <h6>Category</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Web Hosting</a></li>
+                        <li><a href="#">Domains</a></li>
+                        <li><a href="#">Premium Hosting</a></li>
+                        <li><a href="#">Private Server</a></li>
+                        <li><a href="#">E-mail Hosting</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12  text-m-center">
+                <div class="footer-links m-mt-40">
+                    <h6>Social Media</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram </a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12  text-m-center">
+                <div class="footer-links m-mt-40">
+                    <h6>Payment</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Claim</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="footer-bottom">
+    <div class="container">
+        <div class="row align-items-center mt-0 pt-2 pb-4 text-center">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-m-center">
+                <div class="footer-bootom-links">
+                    <span>Copyright © 2023 All Rights Reserved By shopping.com</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Website JS -->
+<script src="assets/js/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/%40popperjs/core%402.10.2/dist/umd/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Slick Carousel JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- popup zoom image -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- magnify zoom hover -->
+<script src="assets/js/zoom.js"></script>
+<!-- Custom JS -->
+<script src="assets/js/main.js"></script>
+<!-- nice select -->
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="assets/js/fastclick.js"></script>
+<script src="assets/js/prism.js"></script>
+<script>
+$(document).ready(function() {
+    $('select:not(.ignore)').niceSelect();
+    FastClick.attach(document.body);
+});
+</script>
+
+<!-- tabs validation -->
+
+<script>
+$(document).ready(function() {
+    $('#pills-shipping-tab').attr('disabled', 'disabled');
+    $('#pills-payment-tab').attr('disabled', 'disabled');
+
+    $("form").submit(function(event) {
+        event.preventDefault();
+
+        if (this.checkValidity()) {
+
+            if ($(this).attr('id') === 'address-form') {
+                $('#pills-shipping-tab').removeAttr('disabled');
+                $('#pills-shipping-tab').tab('show');
+            } else if ($(this).attr('id') === 'shipping-form') {
+                $('#pills-payment-tab').removeAttr('disabled');
+                $('#pills-payment-tab').tab('show');
+            }
+        }
+
+        $(this).addClass('was-validated');
+    });
+});
+</script>
+
+
+
+
+<!-- Offcanvas Side Bar -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+        <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+            <li class="nav-item dropdown megamenu-li">
+                <a class="nav-link w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">All
+                    CATEGORY <i class="fa fa-angle-down float-end"></i></a>
+                <div class="dropdown-menu megamenu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <a class="dropdown-item" href="#">Cameras & Camcorders</a>
+                                <a class="dropdown-item" href="#">Laptops & Computers</a>
+                                <a class="dropdown-item" href="#">Mobile Phones</a>
+                                <a class="dropdown-item" href="#">TVs and Entertainment</a>
+                                <a class="dropdown-item" href="#">Kitchen Appliances</a>
+                                <a class="dropdown-item" href="#">Home Appliances</a>
+                                <a class="dropdown-item" href="#">Wearable Gadgets</a>
+                                <a class="dropdown-item" href="#">Health Care</a>
+                                <a class="dropdown-item" href="#">Roofing Sheets</a>
+                            </div>
+                            <div class="col-lg-3">
+                                <a class="dropdown-item" href="#">PVC Pipes</a>
+                                <a class="dropdown-item" href="#">Industrial Machinery</a>
+                                <a class="dropdown-item" href="#">Gaming</a>
+                                <a class="dropdown-item" href="#">Ladies Kurtis</a>
+                                <a class="dropdown-item" href="#">Men's Clothing</a>
+                                <a class="dropdown-item" href="#">Footwear</a>
+                                <a class="dropdown-item" href="#">Brand Store</a>
+                                <a class="dropdown-item" href="#">Building Construction</a>
+                                <a class="dropdown-item" href="#">Medical Equipment</a>
+                            </div>
+                            <div class="col-lg-3">
+                                <a class="dropdown-item" href="#">Kids Toys</a>
+                                <a class="dropdown-item" href="#">Electronics</a>
+                                <a class="dropdown-item" href="#">Babies wear</a>
+                                <a class="dropdown-item" href="#">Chemicals</a>
+                                <a class="dropdown-item" href="#">Mobile Phones</a>
+                                <a class="dropdown-item" href="#">Garments</a>
+                                <a class="dropdown-item" href="#">Cameras & Camcorders</a>
+                                <a class="dropdown-item" href="#">Laptops & Computers</a>
+                                <a class="dropdown-item" href="#">Mobile Phones</a>
+                            </div>
+                            <div class="col-lg-3">
+                                <a class="dropdown-item" href="#">Cameras & Camcorders</a>
+                                <a class="dropdown-item" href="#">Laptops & Computers</a>
+                                <a class="dropdown-item" href="#">Mobile Phones</a>
+                                <a class="dropdown-item" href="#">TVs and Entertainment</a>
+                                <a class="dropdown-item" href="#">Kitchen Appliances</a>
+                                <a class="dropdown-item" href="#">Home Appliances</a>
+                                <a class="dropdown-item" href="#">Wearable Gadgets</a>
+                                <a class="dropdown-item" href="#">Health Care</a>
+                                <a class="dropdown-item" href="#">Roofing Sheets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+        </ul>
+        <div class="mt-3">
+            <a href="#" class="btn btn-theme-outline w-100">Contact Us</a> <br><br>
+            <a href="#" class="btn btn-theme-outline w-100">Sign In</a>
+        </div>
+    </div>
+</div>    <!-- end -->
+
+</body>
+</html>
